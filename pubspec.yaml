@@ -28,10 +28,10 @@ dependencies:
     sdk: flutter
   firebase_auth: ^1.0.1 
   firebase_core: ^1.0.2
-  #flutter_bluetooth_serial: ^0.2.2
-  #scoped_model: ^1.0.1
+  flutter_bluetooth_serial: ^0.2.2
+  scoped_model: ^1.0.1
   #flutter_ble: ^0.5.3
-  flutter_blue: ^0.8.0
+  #flutter_blue: ^0.8.0
   
 
   # The following adds the Cupertino Icons font to your application.

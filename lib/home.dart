@@ -72,7 +72,9 @@ class _HomeState extends State<HomeClass> {
                     height: 50,
                     width: 250,
                     child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/screen8');
+                      },
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                           side: BorderSide(color: Color(0xffF7DC6F))),
