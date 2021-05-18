@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 
-
 import 'DiscoveryPage.dart';
 import 'SelectBondedDevicePage.dart';
 import 'Connection.dart';
@@ -84,16 +83,33 @@ class _MainPage extends State<Rancidity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
-        title: const Text('Flutter Bluetooth Serial'),
+        backgroundColor: Color(0xff196F3D),
+        title: const Text('Bluetooth Connection',
+            style: TextStyle(
+                fontFamily: 'Comfortaa',
+                color: Color(0xffF7DC6F),
+                fontSize: 30.0)),
       ),
       body: Container(
         child: ListView(
           children: <Widget>[
             Divider(),
-            ListTile(title: const Text('General')),
+            ListTile(
+                title: const Text('General',
+                    style: TextStyle(
+                      color: Color(0xff196F3D),
+                      fontFamily: 'Comfortaa',
+                      fontSize: 15.0,
+                    ))),
             SwitchListTile(
-              title: const Text('Enable Bluetooth'),
+              title: const Text('Enable Bluetooth',
+                  style: TextStyle(
+                    color: Color(0xff196F3D),
+                    fontFamily: 'Comfortaa',
+                    fontSize: 15.0,
+                  )),
               value: _bluetoothState.isEnabled,
               onChanged: (bool value) {
                 // Do the request and update with the true value then
@@ -111,18 +127,49 @@ class _MainPage extends State<Rancidity> {
               },
             ),
             ListTile(
-              title: const Text('Bluetooth status'),
+              title: const Text('Bluetooth status',
+                  style: TextStyle(
+                    color: Color(0xff196F3D),
+                    fontFamily: 'Comfortaa',
+                    fontSize: 15.0,
+                  )),
               subtitle: Text(_bluetoothState.toString()),
-              trailing: RaisedButton(
-                child: const Text('Settings'),
+              trailing: FlatButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                    side: BorderSide(color: Color(0xffF7DC6F))),
+                color: Color(0xff196F3D),
+                textColor: Color(0xffF7DC6F),
+                padding: EdgeInsets.all(8.0),
+                child: const Text(
+                  'Settings',
+                  style: TextStyle(
+                    //color: Color(0xff196F3D),
+                    fontFamily: 'Comfortaa',
+                    fontSize: 15.0,
+                  ),
+                ),
                 onPressed: () {
                   FlutterBluetoothSerial.instance.openSettings();
                 },
               ),
             ),
             ListTile(
-              title: RaisedButton(
-                  child: const Text('Explore discovered devices'),
+              title: FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: Color(0xffF7DC6F))),
+                  color: Color(0xff196F3D),
+                  textColor: Color(0xffF7DC6F),
+                  padding: EdgeInsets.all(8.0),
+                  child: const Text(
+                    'Explore discovered devices',
+                    style: TextStyle(
+                      //color: Color(0xff196F3D),
+                      fontFamily: 'Comfortaa',
+                      fontSize: 15.0,
+                    ),
+                  ),
                   onPressed: () async {
                     final BluetoothDevice selectedDevice =
                         await Navigator.of(context).push(
@@ -141,8 +188,21 @@ class _MainPage extends State<Rancidity> {
                   }),
             ),
             ListTile(
-              title: RaisedButton(
-                child: const Text('Connect to paired device to chat'),
+              title: FlatButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                    side: BorderSide(color: Color(0xffF7DC6F))),
+                color: Color(0xff196F3D),
+                textColor: Color(0xffF7DC6F),
+                padding: EdgeInsets.all(8.0),
+                child: const Text(
+                  'Connect to paired device to chat',
+                  style: TextStyle(
+                    //color: Color(0xff196F3D),
+                    fontFamily: 'Comfortaa',
+                    fontSize: 15.0,
+                  ),
+                ),
                 onPressed: () async {
                   final BluetoothDevice selectedDevice =
                       await Navigator.of(context).push(

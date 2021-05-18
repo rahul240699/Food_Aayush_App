@@ -91,15 +91,28 @@ class _ConnectPageState extends State<ConnectPage> {
     return Scaffold(
       backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
+          backgroundColor: Color(0xff196F3D),
           title: (isConnecting
-              ? Text('Connecting to ' + widget.server!.name + '...')
+              ? Text('Connecting to ' + widget.server!.name + '...',
+                  style: TextStyle(
+                      fontFamily: 'Comfortaa',
+                      color: Color(0xffF7DC6F),
+                      fontSize: 30.0))
               : isConnected
-                  ? Text('Connected to ' + widget.server!.name)
-                  : Text('Logs ' + widget.server!.name))),
+                  ? Text('Connected to ' + widget.server!.name,
+                      style: TextStyle(
+                          fontFamily: 'Comfortaa',
+                          color: Color(0xffF7DC6F),
+                          fontSize: 30.0))
+                  : Text('Logs ' + widget.server!.name,
+                      style: TextStyle(
+                          fontFamily: 'Comfortaa',
+                          color: Color(0xffF7DC6F),
+                          fontSize: 30.0)))),
       body: Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
               height: 40,
@@ -108,7 +121,10 @@ class _ConnectPageState extends State<ConnectPage> {
                 child: Text(
                   messages[0].text.toString(),
                   style: TextStyle(
-                      color: Colors.black, fontSize: 80.0, letterSpacing: -5),
+                      fontFamily: 'Comfortaa',
+                      color: Color(0xffF7DC6F),
+                      fontSize: 80.0,
+                      letterSpacing: -5),
                 ),
                 padding: EdgeInsets.all(12.0),
                 margin: EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),

@@ -70,10 +70,20 @@ class _DiscoveryPage extends State<DiscoveryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
+        backgroundColor: Color(0xff196F3D),
         title: isDiscovering!
-            ? Text('Discovering devices')
-            : Text('Discovered devices'),
+            ? Text('Discovering devices',
+                style: TextStyle(
+                    fontFamily: 'Comfortaa',
+                    color: Color(0xffF7DC6F),
+                    fontSize: 30.0))
+            : Text('Discovered devices',
+                style: TextStyle(
+                    fontFamily: 'Comfortaa',
+                    color: Color(0xffF7DC6F),
+                    fontSize: 30.0)),
         actions: <Widget>[
           isDiscovering!
               ? FittedBox(
