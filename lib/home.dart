@@ -27,84 +27,84 @@ class _HomeState extends State<HomeClass> {
           ),
         ),
         body: Container(
-            width: 500,
+            // width: 500,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Container(
-                    height: 50,
-                    width: 250,
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/screen7');
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          side: BorderSide(color: Color(0xffF7DC6F))),
-                      color: Color(0xff196F3D),
-                      textColor: Color(0xffF7DC6F),
-                      padding: EdgeInsets.all(12.0),
-                      child: Text('Identify The Freshness',
-                          style: TextStyle(fontFamily: 'Comfortaa')),
-                    )),
-                SizedBox(
-                  height: 100.0,
-                ),
-                Container(
-                    height: 50,
-                    width: 250,
-                    child: FlatButton(
-                      onPressed: _launchURL,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          side: BorderSide(color: Color(0xffF7DC6F))),
-                      color: Color(0xff196F3D),
-                      textColor: Color(0xffF7DC6F),
-                      padding: EdgeInsets.all(12.0),
-                      child: Text('Nutritional Analysis',
-                          style: TextStyle(fontFamily: 'Comfortaa')),
-                    )),
-                SizedBox(
-                  height: 100.0,
-                ),
-                Container(
-                    height: 50,
-                    width: 250,
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/screen8');
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          side: BorderSide(color: Color(0xffF7DC6F))),
-                      color: Color(0xff196F3D),
-                      textColor: Color(0xffF7DC6F),
-                      padding: EdgeInsets.all(12.0),
-                      child: Text('Rancidity of oil',
-                          style: TextStyle(fontFamily: 'Comfortaa')),
-                    )),
-                SizedBox(
-                  height: 100.0,
-                ),
-                Container(
-                    height: 50,
-                    width: 250,
-                    child: RaisedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/screen6');
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          side: BorderSide(color: Color(0xffF7DC6F))),
-                      color: Color(0xff196F3D),
-                      textColor: Color(0xffF7DC6F),
-                      padding: EdgeInsets.all(12.0),
-                      child: Text('About Us',
-                          style: TextStyle(fontFamily: 'Comfortaa')),
-                    ))
-              ],
-            )));
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+                height: 50,
+                width: 250,
+                child: FlatButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/screen7');
+                  },
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: Color(0xffF7DC6F))),
+                  color: Color(0xff196F3D),
+                  textColor: Color(0xffF7DC6F),
+                  padding: EdgeInsets.all(12.0),
+                  child: Text('Identify The Freshness',
+                      style: TextStyle(fontFamily: 'Comfortaa')),
+                )),
+            SizedBox(
+              height: 100.0,
+            ),
+            Container(
+                height: 50,
+                width: 250,
+                child: FlatButton(
+                  onPressed: _launchURL,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: Color(0xffF7DC6F))),
+                  color: Color(0xff196F3D),
+                  textColor: Color(0xffF7DC6F),
+                  padding: EdgeInsets.all(12.0),
+                  child: Text('Nutritional Analysis',
+                      style: TextStyle(fontFamily: 'Comfortaa')),
+                )),
+            SizedBox(
+              height: 100.0,
+            ),
+            Container(
+                height: 50,
+                width: 250,
+                child: FlatButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/screen8');
+                  },
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: Color(0xffF7DC6F))),
+                  color: Color(0xff196F3D),
+                  textColor: Color(0xffF7DC6F),
+                  padding: EdgeInsets.all(12.0),
+                  child: Text('Rancidity of oil',
+                      style: TextStyle(fontFamily: 'Comfortaa')),
+                )),
+            SizedBox(
+              height: 100.0,
+            ),
+            Container(
+                height: 50,
+                width: 250,
+                child: RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/screen6');
+                  },
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: Color(0xffF7DC6F))),
+                  color: Color(0xff196F3D),
+                  textColor: Color(0xffF7DC6F),
+                  padding: EdgeInsets.all(12.0),
+                  child: Text('About Us',
+                      style: TextStyle(fontFamily: 'Comfortaa')),
+                ))
+          ],
+        )));
   }
 
   Future<void> fcam() async {

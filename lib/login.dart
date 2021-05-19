@@ -31,8 +31,8 @@ class _LoginClass extends State<LoginClass> {
       body: Form(
           key: _formkey,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            //crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.all(10),
@@ -43,12 +43,13 @@ class _LoginClass extends State<LoginClass> {
                       }
                     },
                     onSaved: (input) => _email = input!,
-                    style: kLabelStyle,
+                    // style: kLabelStyle,
+                    style: TextStyle(color: Color(0xff196F3D)),
                     decoration: InputDecoration(
                         border: OutlineInputBorder(), labelText: 'Email'),
                   )),
               SizedBox(
-                height: 25.0,
+                height: 10.0,
               ),
               Padding(
                   padding: EdgeInsets.all(10),
@@ -59,13 +60,14 @@ class _LoginClass extends State<LoginClass> {
                       }
                     },
                     onSaved: (input) => _pwd = input!,
-                    style: kLabelStyle,
+                    // style: kLabelStyle,
+                    style: TextStyle(color: Color(0xff196F3D)),
                     decoration: InputDecoration(
                         border: OutlineInputBorder(), labelText: 'Password'),
                     obscureText: true,
                   )),
               SizedBox(
-                height: 25.0,
+                height: 10.0,
               ),
               Container(
                   height: 50,
@@ -84,7 +86,7 @@ class _LoginClass extends State<LoginClass> {
                     ),
                   )),
               SizedBox(
-                height: 150.0,
+                height: 25.0,
               ),
               GestureDetector(
                 onTap: Register,

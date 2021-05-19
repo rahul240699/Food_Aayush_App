@@ -32,10 +32,12 @@ class StartState extends State<Welcomescreen> {
       body: Container(
         alignment: Alignment.center,
         child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            new Container(
-              alignment: Alignment(0.0, 0.0),
-              height: 700,
+            new Center(
+              // alignment: Alignment(0.0, 0.0),
+              // height: 700,
               child: new Text(
                 'Food Aayush',
                 textAlign: TextAlign.center,
@@ -46,10 +48,6 @@ class StartState extends State<Welcomescreen> {
               ),
             ),
           ],
-
-          //child: Image.asset('assets/Opening.JPG'),
-
-          //child: Text('This Works'),
         ),
       ),
     );

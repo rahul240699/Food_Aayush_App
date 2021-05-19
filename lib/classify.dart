@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
 import 'package:image_picker/image_picker.dart';
 
+import 'mainnavbar.dart';
+
 class Classifier extends StatefulWidget {
   //final String imagepath;
   //const Classifier({Key key, @required this.imagepath}) : super(key: key);
@@ -86,6 +88,7 @@ class _ClassifierState extends State<Classifier> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          iconTheme: IconThemeData(color: Color(0xffF7DC6F)),
           backgroundColor: Color(0xff196F3D),
           title: Text(
             'Freshness Detection',
@@ -97,6 +100,7 @@ class _ClassifierState extends State<Classifier> {
       body: Container(
         color: Color(0xffF7DC6F),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             _loading
@@ -156,6 +160,7 @@ class _ClassifierState extends State<Classifier> {
           ],
         ),
       ),
+      drawer: MainNavbar(),
     );
   }
 }

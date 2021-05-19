@@ -120,6 +120,7 @@ class _SelectBondedDevicePage extends State<SelectBondedDevicePage> {
     return Scaffold(
       backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0xffF7DC6F)),
         backgroundColor: Color(0xff196F3D),
         title: Text('Select device',
             style: TextStyle(

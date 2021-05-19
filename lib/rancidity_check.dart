@@ -6,6 +6,7 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'DiscoveryPage.dart';
 import 'SelectBondedDevicePage.dart';
 import 'Connection.dart';
+import 'package:foodaayush/mainnavbar.dart';
 
 class Rancidity extends StatefulWidget {
   @override
@@ -85,6 +86,7 @@ class _MainPage extends State<Rancidity> {
     return Scaffold(
       backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0xffF7DC6F)),
         backgroundColor: Color(0xff196F3D),
         title: const Text('Bluetooth Connection',
             style: TextStyle(
@@ -225,6 +227,7 @@ class _MainPage extends State<Rancidity> {
           ],
         ),
       ),
+      drawer: MainNavbar(),
     );
   }
 

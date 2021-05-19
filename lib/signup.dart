@@ -16,6 +16,7 @@ class _RegisterState extends State<Registerpage> {
     return Scaffold(
       backgroundColor: Color(0xffF7DC6F),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0xffF7DC6F)),
         backgroundColor: Color(0xff196F3D),
         elevation: 0.0,
         title: Text('Register',
@@ -37,6 +38,7 @@ class _RegisterState extends State<Registerpage> {
                   }
                 },
                 onSaved: (input) => _email = input!,
+                style: TextStyle(color: Color(0xff196F3D)),
                 decoration: InputDecoration(labelText: 'Email'),
               ),
               SizedBox(
@@ -49,6 +51,7 @@ class _RegisterState extends State<Registerpage> {
                   }
                 },
                 onSaved: (input) => _pwd = input!,
+                style: TextStyle(color: Color(0xff196F3D)),
                 decoration: InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
