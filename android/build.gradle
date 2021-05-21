@@ -30,9 +30,3 @@ subprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-// project.ext {
-//   set('FlutterFire', [
-//     FirebaseSDKVersion: '21.1.0'
-//   ])
-// }
