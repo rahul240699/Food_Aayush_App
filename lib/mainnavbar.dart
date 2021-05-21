@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:foodaayush/classify.dart';
 import 'package:foodaayush/faq.dart';
 import 'package:foodaayush/aboutus.dart';
-import 'package:foodaayush/home.dart';
-import 'package:foodaayush/main.dart';
+//import 'package:foodaayush/home.dart';
+//import 'package:foodaayush/main.dart';
 import 'package:foodaayush/rancidity_check.dart';
 //import 'package:foodaayush/mainnutriscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -33,25 +33,6 @@ class MainNavbar extends StatelessWidget {
                 color: Color(0xff196F3D),
               ),
             ),
-            // ListTile(
-            //   title: Text(
-            //     'Home',
-            //     style: TextStyle(
-            //       fontSize: 20.0,
-            //       fontFamily: "Comfortaa",
-            //       color: Color(0xffF7DC6F),
-            //     ),
-            //   ),
-            //   tileColor: Color(0xff196F3D),
-            //   hoverColor: Color(0xff58D68D),
-            //   onTap: () {
-            //     // Update the state of the app
-            //     // ...
-            //     // Then close the drawer
-            //     Navigator.pop(context);
-            //     Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeClass(),),);
-            //   },
-            // ),
             ListTile(
               title: Text(
                 'Identify the Freshness',
@@ -181,27 +162,6 @@ class MainNavbar extends StatelessWidget {
                 );
               },
             ),
-            // ListTile(
-            //   title: Text(
-            //     'Login',
-            //     style: TextStyle(
-            //       fontSize: 20.0,
-            //       fontFamily: "Comfortaa",
-            //       color: Color(0xffF7DC6F),
-            //     ),
-            //   ),
-            //   tileColor: Color(0xff196F3D),
-            //   hoverColor: Color(0xff58D68D),
-            //   onTap: () {
-            //     // Update the state of the app
-            //     // ...
-            //     // Then close the drawer
-
-            //     Navigator.pop(context);
-            //     Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginDemo(),),);
-
-            //   },
-            // ),
           ],
         ),
       ),

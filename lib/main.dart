@@ -1,7 +1,7 @@
 //import 'dart:io';
 
 //import 'package:camera/new/src/support_android/camera.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:foodaayush/aboutus.dart';
@@ -9,7 +9,7 @@ import 'package:foodaayush/aboutus.dart';
 
 import 'package:foodaayush/firstsreen.dart';
 //import 'package:foodaayush/fresh.dart';
-import 'package:foodaayush/home.dart';
+//import 'package:foodaayush/home.dart';
 import 'package:foodaayush/mainnutriscreen.dart';
 import 'package:foodaayush/rancidity_check.dart';
 //import 'package:foodaayush/rancidity_check.dart';
@@ -49,14 +49,6 @@ Future<Null> main() async {
 // }
 
 class MyClass extends StatelessWidget {
-  //  const MyClass({
-  //    Key key,
-  //    @required this.camera,
-  //  }) : super(key: key);
-
-  //final firstCam = cameras.first;
-  // final CameraDescription camera;
-  //late final User user;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

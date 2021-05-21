@@ -107,17 +107,6 @@ class _HomeState extends State<HomeClass> {
         )));
   }
 
-  Future<void> fcam() async {
-    //final cameras = await availableCameras();
-    //Navigator.pushNamed(context, '/screen7');
-    //Navigator.pushReplacementNamed(context, '/screen5');
-    // Navigator.push(
-    //     context,
-    //     MaterialPageRoute(
-    //         builder: (BuildContext context) => Freshcam(
-    //               camera: cameras.first,
-    //             )));
-  }
   _launchURL() async {
     const url = 'https://food-aayush.herokuapp.com/';
     if (await canLaunch(url)) {
