@@ -1,16 +1,41 @@
-# foodaayush
+# **Flutter UI Documentation**
 
-A new Flutter project.
+**APK link:**
+https://drive.google.com/file/d/1mkXkOxHaLk23ldas-AEwtkmfEhoEjNUo/view?usp=sharing
 
-## Getting Started
+### Installation:
 
-This project is a starting point for a Flutter application.
+We followed the following documentation provided by Flutter for installation of flutter on Windows.
 
-A few resources to get you started if this is your first Flutter project:
+[https://flutter.dev/docs/get-started/install/windows](https://flutter.dev/docs/get-started/install/windows)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**Environment Variable Needed:**
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- JAVA_HOME
+- Add *C:\src\flutter\bin* in system path variable
+
+After Everything Set up, run 
+
+```bash
+flutter doctor
+```
+
+Open the folder in VS code and run debugger
+
+Run Debugger won't work
+
+### Null Safety
+
+Dart 2.0 introduced null safety feature. Our code has one package i.e. flutter_bluetooth_serial which doesn't support null safety. As developer of this package didn't update package to support null safety. So to debug this code, we have to use unsound safety. Mixed-version programs can be executed with unsound null safety. [https://dart.dev/null-safety/unsound-null-safety](https://dart.dev/null-safety/unsound-null-safety) 
+
+To run debugger
+
+```bash
+flutter run --no-sound-null-safety
+```
+
+### To Build APK
+
+```bash
+flutter build apk --no-sound-null-safety
+```
